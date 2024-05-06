@@ -56,9 +56,7 @@ function UserDeposit(){
                 console.error("Error:", error);
             }
         }
-
         fetchData();
-
     },[navigate])
 
     function handleChange(e){

@@ -54,7 +54,7 @@ function UserDashboard(){
         }
 
         fetchData();
-
+        
     },[navigate])
 
     return(

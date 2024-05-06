@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Axios from "axios";
 import {jwtDecode} from "jwt-decode";
@@ -8,6 +8,9 @@ import * as Token from "../Functions/token"
 
 
 function Signin(){
+    useEffect(()=>{
+        Token.deleteToken()
+    })
     const navigate = useNavigate()
     const [state,setState] = useState({
         email:"",
